@@ -40,8 +40,10 @@ In this example above we have seen how flash loans could facilitate spot transac
 12) Trader's contract transfers profits to trader's account.
 
 **Advantage of flash loans for the flash loan bank:**
+
 Due to atomicity (https://en.wikipedia.org/wiki/Atomicity_(database_systems)) of blockchain transaction, flash loan bank is able to provide a completely uncollateralized flash loan and is not exposed to borrower's credit risk. In other words, should something go wrong during the transaction (supplier does not send the tokenized goods, off-taker does not send the required funds, etc...), the transaction will be reverted to its initial state.
 
 **Advantage of flash loans for the trader:**
+
 As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expenses compared to traditional borrowing.
 
