@@ -29,7 +29,7 @@ In this example above we have seen how flash loans could facilitate spot transac
 1) Once the goods are loaded on a vessel, captain issues tokens for the amount of the goods and sends it to the supplier's contract.
 2) Starting from this point, everything happens in one single transaction. First, trader takes a flash loan.
 3) Trader pays the supplier.
-4) Supplier's contract transers the funds to the supplier's account.
+4) Supplier's contract transfers the funds to the supplier's account.
 5) Supplier's contract transfers the tokens to trader's contract.
 6) Trader's contract transfer the received tokens to the final off-taker's contract.
 7) Final off-taker's contract transfers the tokens to the final off-taker's account.
