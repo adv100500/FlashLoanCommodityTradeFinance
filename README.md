@@ -19,3 +19,7 @@ Here is the explanation of the scheme above:
 9) Final off-taker's contract transfer the funds to the trader's account (120 ether).
 10) Trader's contract repays the flash loan plus interest (101 ether).
 11) Trader's contract transfers the profit to the trader's account (19 ether).
+
+**FINAL THOUGHTS:**
+
+In this example we have analyzed spot transaction, however could this be applied also to transactions with deferred payment? Please see another scheme below 
