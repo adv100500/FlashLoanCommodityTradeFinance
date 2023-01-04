@@ -12,7 +12,7 @@ Here is the explanation of the scheme above:
 2) Final off-taker checks the price of trader's contract and funds the contract accordingly (assuming 120 ether). The supplier's price for the goods is assumed 100 ethers, bank's interest rate is assumed 1 ether.
 3) Starting from this point, everything happens in one single transaction. First, trader takes a flash loan of 100 ether.
 4) Trader pays the supplier.
-5) Supplier's contract transers the funds to the supplier's account.
+5) Supplier's contract transfers the funds to the supplier's account.
 6) Supplier's contract transfers the tokens to trader's contract.
 7) Trader's contract transfers the received tokens to the final off-taker's contract.
 8) Final off-taker's contract transfers the tokens to the final off-taker's account.
