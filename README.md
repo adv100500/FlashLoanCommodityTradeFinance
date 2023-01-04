@@ -8,8 +8,8 @@ The proof of concept with the corresponding smart contracts is available as well
 
 Here is the explanation of the scheme above:
 
-1) Once the goods are loaded on a vessel, captain issues tokens for the amount of the goods (For the sake of simplicity I used ERC-20 for the token and 100 tokens) and sends it to the supplier's contract.
-2) Final off-taker checks the price of trader's contract and funds it's contract accordingly (assuming 120 ether). The supplier's price for the goods is assumed 100 ethers, bank's interest rate is assumed 1 ether.
+1) Once the goods are loaded on a vessel, captain issues tokens for the amount of the goods (in this example - 100 tokens) and sends it to the supplier's contract.
+2) Final off-taker checks the price of trader's contract and funds the contract accordingly (assuming 120 ether). The supplier's price for the goods is assumed 100 ethers, bank's interest rate is assumed 1 ether.
 3) Starting from this point, everything happens in one single transaction. First, trader takes a flash loan of 100 ether.
 4) Trader pays the supplier.
 5) Supplier's contract transer the funds to the supplier's account.
