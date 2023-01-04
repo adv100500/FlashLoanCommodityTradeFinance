@@ -1,6 +1,6 @@
 # FlashLoan Commodity Trade Finance
 
-Here is an example of how flash loans can facilitate commodity trade finance transactions (in the below example a spot transaction assumed with no deferred payment):
+Here is an example of how flash loans could facilitate commodity trade finance transactions (in the below example a spot transaction assumed with no deferred payment):
 
 ![Untitled-2023-01-04-0945](https://user-images.githubusercontent.com/121932525/210520986-97da695a-9ac1-43fe-9e37-4e8cab31365d.png)
 
@@ -20,6 +20,6 @@ Here is the explanation of the scheme above:
 10) Trader's contract repays the flash loan plus interest (101 ether).
 11) Trader's contract transfers the profit to the trader's account (19 ether).
 
-**Final Thoughts:**
+**Deferred payment:**
 
 In this example we have analyzed spot transaction, however could this be applied also to transactions with deferred payment? Please see another scheme below:
