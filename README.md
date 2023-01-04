@@ -22,6 +22,6 @@ Here is the explanation of the scheme above:
 
 **Deferred payment:**
 
-In this example we have analyzed spot transaction, however could this be applied also to transactions with deferred payment? Please see another scheme below:
+In this example above we have seen how flash loans could facilitate spot transaction, however could this be also applied to transactions with deferred payment? Please see another scheme below:
 
 ![Untitled-2023-01-04-0945](https://user-images.githubusercontent.com/121932525/210527655-0b11c7ff-4d27-41bf-987e-cb28150c8811.png)
