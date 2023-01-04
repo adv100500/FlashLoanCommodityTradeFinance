@@ -20,6 +20,9 @@ Here is the explanation of the scheme above:
 10) Trader's contract repays the flash loan plus interest (101 ether).
 11) Trader's contract transfers profits to trader's account (19 ether).
 
+![Screenshot 2023-01-04 201545](https://user-images.githubusercontent.com/121932525/210659447-ce457840-5cc9-413c-93bd-ad00a87262fc.png)
+
+
 **Deferred payment:**
 
 In this example above we have seen how flash loans could facilitate spot transaction, however could this be also applied to transactions with deferred payment? Please see below a possible solution:
