@@ -10,7 +10,7 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs.
 
-**Tokenized goods:** tokenized goods meaning tokenized document of title (ex. Bill of lading), represented by an ERC20 token in this case.
+**Tokenized goods:** tokenized goods meaning tokenized document of title (ex. bill of lading), represented by an ERC20 token in this case.
 
 
 
