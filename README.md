@@ -13,6 +13,7 @@ The proof of concept with the corresponding smart contracts is available as well
 **Tokenized goods:** tokenized goods meaning tokenized document of title (ex. Bill of lading), represented by an ERC20 token in this case.
 
 
+
 ![Untitled-2023-01-04-0945](https://user-images.githubusercontent.com/121932525/210520986-97da695a-9ac1-43fe-9e37-4e8cab31365d.png)
 
 Here is the explanation of the scheme above:
