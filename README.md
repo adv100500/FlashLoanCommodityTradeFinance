@@ -6,12 +6,12 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Advantage of flash loans for commodity trading companies:**
 
-As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing.
+As the whole transaction takes place in seconds, the advantage for the trading company is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing. Basically, if we take an example of a transaction that lasts 30 days starting from payment to the supplier and until the payment of the final off-taker, this will require a loan for 30 days usually collateralized by the goods (represented by the document of title, in the examples below by the bill of lading which will be sent to the bank in order for the bank to establish constructive possession over the goods). The same transaction performed on blockchain financed by flash loan will take only a few seconds - therefore the interest rate will be charged only for a few seconds. 
 
 
 **Definitions**
 
-**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state and this is why there is no credit risk of the borrower. This is possible due to **atomicity** of blockchain transactions. 
+**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state and this is why there is no credit risk of the borrower involved. This is possible due to **atomicity** of blockchain transactions. 
 
 **Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs. In this example several conditions are set in smart contracts for various checks, including but not limited to: checks if received funds correspond to the price of the goods, checks if tokenized goods were received, checks if sender is a smart contract, checks if borrower has enough funds to repay the flash loan plus interests. Should at least one of these conditoins be in breach, the whole transaction is deemed null and void and reverted.
 
