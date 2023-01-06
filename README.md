@@ -6,7 +6,7 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Advantage of flash loans for the trader:**
 
-As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expenses (**hundreds of thousands times**) compared to traditional borrowing.
+As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing.
 
 
 **Definitions**
