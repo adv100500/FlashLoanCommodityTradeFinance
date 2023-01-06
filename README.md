@@ -4,7 +4,7 @@ Please see two examples below how **flash loans** could facilitate commodity tra
 
 The proof of concept with the corresponding smart contracts is available as well as the testing script (please see "contracts" folder for smart contracts and "test" folder for testing script).
 
-**Advantage of flash loans for the trader:**
+**Advantage of flash loans for commodity trading companies:**
 
 As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing.
 
