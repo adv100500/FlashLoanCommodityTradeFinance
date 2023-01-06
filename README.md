@@ -6,9 +6,9 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Definitions**
 
-**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state. This is possible due to atomicity of blockchain transactions.
+**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state. This is possible due to **atomicity** of blockchain transactions. 
 
-**Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs.
+**Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs. In this case several conditions set in smart contracts for various checks, including but not limited to: checks if the funds received correspond to the price, checks if the tokenized goods were received, checks if the sender is a smart contract, checks if the borrower has enough funds to repay the flash loan plus interests. Should at least one of this conditoins be in breach, the whole transaction is deemed null and void and reverted.
 
 **Tokenized goods:** tokenized goods meaning tokenized document of title (ex. bill of lading), represented by an ERC20 token in this case.
 
