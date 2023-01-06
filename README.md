@@ -6,7 +6,7 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Advantage of flash loans for commodity trading companies:**
 
-As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing. Basically, if we take an example of a transaction that lasts 30 days starting from payment to the supplier and until the payment of the final off-taker, this will require a loan for 30 days usually collateralized by the goods (represented by the document of title, in the examples below by the bill of lading which will be sent to the bank in order for the bank to establish constructive possession over the goods). The same transaction performed on blockchain financed by flash loan will take only a few seconds - therefore the interest rate will be charged only for a few seconds. 
+As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (**hundreds of thousands times**) compared to traditional borrowing. Basically, if we take an example of a transaction that lasts 30 days starting from payment to the supplier and until the payment of the final off-taker, this will require a loan for 30 days usually collateralized by the goods (represented by the document of title, in the examples below by the bill of lading which will be sent to the bank in order for the bank to establish constructive possession over the goods). The same transaction performed on blockchain financed by flash loan will take only a few seconds - therefore the interest rate will be charged only for a few seconds and no collateral is required. 
 
 
 **Definitions**
