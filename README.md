@@ -1,4 +1,4 @@
-# FlashLoan Commodity Trade Finance
+# Flash Loans in Commodity Trade Finance
 
 Here is an example of how flash loans could facilitate commodity trade finance transactions (in the below example a spot transaction assumed with no deferred payment):
 
