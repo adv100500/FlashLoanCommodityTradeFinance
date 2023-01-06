@@ -4,6 +4,14 @@ Here is an example of how flash loans could facilitate commodity trade finance t
 
 The proof of concept with the corresponding smart contracts is available as well as the testing script (please see "contracts" folder for smart contracts and "test" folder for testing script).
 
+**Definitions**
+
+**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state. This is possible due to atomicity of blockchain transactions.
+
+**Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs.
+
+**Tokenized goods:** tokenized goods meaning tokenized document of title (ex. Bill of lading), represented by an ERC20 token in this case.
+
 ![Untitled-2023-01-04-0945](https://user-images.githubusercontent.com/121932525/210520986-97da695a-9ac1-43fe-9e37-4e8cab31365d.png)
 
 Here is the explanation of the scheme above:
