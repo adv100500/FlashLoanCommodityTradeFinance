@@ -1,12 +1,17 @@
 # Flash Loans in Commodity Trade Finance
 
-Here is an example of how flash loans could facilitate commodity trade finance transactions (in the below example a spot transaction assumed with no deferred payment):
+Here is an example of how flash loans could facilitate commodity trade finance transactions (in the below example a spot transaction assumed with no deferred payment).
 
 The proof of concept with the corresponding smart contracts is available as well as the testing script (please see "contracts" folder for smart contracts and "test" folder for testing script).
 
+**Advantage of flash loans for the trader:**
+
+As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expenses (**hundreds of thousands times**) compared to traditional borrowing.
+
+
 **Definitions**
 
-**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state. This is possible due to **atomicity** of blockchain transactions. 
+**Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state and this is why there is no credit risk of the borrower. This is possible due to **atomicity** of blockchain transactions. 
 
 **Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs. In this example several conditions are set in smart contracts for various checks, including but not limited to: checks if received funds correspond to the price of the goods, checks if tokenized goods were received, checks if sender is a smart contract, checks if borrower has enough funds to repay the flash loan plus interests. Should at least one of these conditoins be in breach, the whole transaction is deemed null and void and reverted.
 
@@ -51,12 +56,3 @@ In this example above we have seen how flash loans could facilitate spot transac
 10) Factoring provider automatically transfers the funds to trader's contract.
 11) Reception of the funds by the trader's contract will automatically trigger repayment of the flash loan plus interest.
 12) Finally, trader's contract transfers profits to trader's account.
-
-**Advantage of flash loans for the flash loan bank:**
-
-Due to **atomicity** of blockchain transaction, flash loan bank is able to provide a completely uncollateralized flash loan and is not exposed to borrower's credit risk. In other words, should something go wrong during the transaction (supplier does not send the tokenized goods, off-taker does not send the required funds, etc...), the transaction will be reverted to its initial state.
-
-**Advantage of flash loans for the trader:**
-
-As the whole transaction takes place in seconds, the advantage for the trader is a much lower interest expenses (**hundreds of thousands times**) compared to traditional borrowing.
-
