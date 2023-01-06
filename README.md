@@ -1,6 +1,6 @@
 # Flash Loans in Commodity Trade Finance
 
-Please see two examples below of how flash loans could facilitate commodity trade finance transactions for commodity trading companies.
+Please see two examples below how flash loans could facilitate commodity trade finance transactions for commodity trading companies.
 
 The proof of concept with the corresponding smart contracts is available as well as the testing script (please see "contracts" folder for smart contracts and "test" folder for testing script).
 
