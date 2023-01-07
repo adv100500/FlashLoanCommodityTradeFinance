@@ -16,7 +16,7 @@ The same transaction performed on blockchain financed by a flash loan will take 
 
 **Atomicity:** an atomic transaction is an indivisible and irreducible series of database operations such that either all occurs, or nothing occurs. In this example several conditions are set in smart contracts for various checks, including but not limited to: checks if received funds correspond to the price of the goods, checks if tokenized goods were received, checks if sender is a smart contract, checks if borrower has enough funds to repay the flash loan plus interests. Should at least one of these conditions be in breach, the whole transaction is deemed null and void and reverted.
 
-**Tokenized goods:** tokenized goods meaning tokenized document of title (ex. bill of lading), represented by an ERC20 token in this case.
+**Tokenized goods:** tokenized document of title (ex. bill of lading), represented by an ERC20 token in this case.
 
 
 
