@@ -59,7 +59,7 @@ describe('[Trade Finance Flash loan]', function () {
 
     });
 
-    it('Exploit', async function () {
+    it('Flash loan transaction', async function () {
         
         ///Final off-taker sets Borrower as supplier
         await this.endBuyer.connect(offtaker).setSupplier(this.trader.address);
