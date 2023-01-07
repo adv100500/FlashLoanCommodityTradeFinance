@@ -40,7 +40,7 @@ contract FlashLoanBorrowerTrader {
         
         _executeActionDuringFlashLoan(msg.value);
 
-        require(address(this).balance >= amountToBeRepaid, "Not engough funds to repay flash loan");
+        require(address(this).balance >= amountToBeRepaid, "Not enough funds to repay the flash loan");
         
         // Return funds to FlashLoanBank
         FlashLoanBank.sendValue(amountToBeRepaid);
