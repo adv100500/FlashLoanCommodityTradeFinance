@@ -4,7 +4,7 @@ const { expect } = require('chai');
 describe('[Trade Finance Flash loan]', function () {
     let buyer, bank, captain, borrower, offtaker,traderInitialBalance,supplierInitialBalance,offtakerInitialBalance;
 
-    // Bank has 1K * 10**18 tokens
+    // Bank has 1K * 10**18 ethers
     const MONEY_IN_POOL = ethers.utils.parseEther('1000');
     const FLASHLOAN= ethers.utils.parseEther('100');
     const SalePrice= ethers.utils.parseEther('120');
