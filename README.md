@@ -6,7 +6,7 @@ The proof of concept with the corresponding smart contracts is available as well
 
 **Advantage of flash loans for commodity trading companies:**
 
-As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (**hundreds of thousands times**) compared to traditional financing for the duration of the transaction and no collateral is required.
+As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (as the interest rate is charged for the period of a few seconds) compared to traditional financing for the duration of the transaction and no collateral is required.
 
 **Definitions**
 
