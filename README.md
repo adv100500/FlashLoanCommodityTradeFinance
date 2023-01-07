@@ -24,8 +24,8 @@ The same transaction performed on blockchain financed by a flash loan will take 
 
 Here is the explanation of the scheme above:
 
-1) Once the goods are loaded on a vessel, captain issues tokens for the amount of the goods (in this example - 100 tokens) and sends it to the supplier's contract.
-2) Final off-taker checks the price of trader's contract and funds the contract accordingly (assuming 120 ether). The supplier's price for the goods is assumed 100 ethers, bank's interest rate is assumed 1 ether.
+1) Once the goods are loaded on a vessel, captain issues tokens for the amount of the goods (in this example - 100 tokens, but could be also represented by 1 single token, also in other formats ex. ERC721) and sends it to the supplier's contract.
+2) Final off-taker checks the price of trader's contract and funds the contract accordingly (assuming 120 ether, but could be any other digital currency). The supplier's price for the goods is assumed 100 ethers, bank's interest rate is assumed 1 ether.
 3) Starting from this point, everything happens in one single transaction, **meaning each following step is triggered automatically by the previous step**. First, trader takes a flash loan of 100 ether.
 4) Upon reception of the flash loan, trader's contract automatically pays the supplier.
 5) Supplier's contract automatically transfers the funds to the supplier's account upon reception of the payment from trader.
