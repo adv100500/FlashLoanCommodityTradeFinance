@@ -56,4 +56,4 @@ In this example above we have seen how flash loans could facilitate spot transac
 11) Reception of the funds by the trader's contract will automatically trigger repayment of the flash loan plus interest.
 12) Finally, trader's contract transfers profits to trader's account.
 
-![Screenshot 2023-01-08 232058](https://user-images.githubusercontent.com/121932525/211222280-a0db6ba6-675f-433b-a01f-828dcd6f4322.png)
+![Screenshot 2023-01-08 232058](https://user-images.githubusercontent.com/121932525/211222650-1a3c42f5-e620-4cf9-b374-5193e61a1168.png)
