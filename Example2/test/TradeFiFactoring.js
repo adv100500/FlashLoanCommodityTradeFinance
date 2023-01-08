@@ -51,7 +51,7 @@ describe('[Trade Finance Flash loan]', function () {
 
         // Check money in factoring contract pool
         expect(await ethers.provider.getBalance(this.factoring.address)).to.be.equal(MONEY_IN_POOL);        
-        console.log("Factoring initial balance: ", ethers.utils.formatEther(await ethers.provider.getBalance(this.factoring.address)));
+
         // Check bank's fee
         expect(await this.bank.fixedFee()).to.be.equal(ethers.utils.parseEther('1'));
 
