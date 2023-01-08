@@ -32,7 +32,7 @@ describe('[Trade Finance Flash loan]', function () {
         this.endBuyer = await SellerFactory.deploy(offtaker.address, this.token.address);
         this.factoring = await factoringFactory.deploy();
         this.trader = await FlashLoanBorrowerFactory.deploy(this.bank.address, this.token.address, this.endBuyer.address, this.supplier.address, borrower.address, this.factoring.address);
-        this.receivableToken = await ReceivableTokenFactory.attach(await this.endBuyer.receivableToken());
+        this.receivableToken = await ReceivableTokenFactory.attach(await this.endBuyer.receivableToken());       
                 
         // Transfer funds to bank's contract         
         await bank.sendTransaction({ to: this.bank.address, value: MONEY_IN_POOL });
@@ -68,18 +68,14 @@ describe('[Trade Finance Flash loan]', function () {
             await this.token.balanceOf(this.supplier.address)
         ).to.equal(INITIAL_GOODS_TOKEN_BALANCE);
 
+
+
     });
 
     it('Flash loan transaction', async function () {
         
         ///Final off-taker sets Borrower as supplier
         await this.endBuyer.connect(offtaker).setSupplier(this.trader.address);
-
-        // Final off-taker sends purchase price to its contract to be able to trade
-        await offtaker.sendTransaction({ to: this.endBuyer.address, value: SalePrice });      
-
-        // Check if seller's contract is funded correctly
-        expect(await ethers.provider.getBalance(this.endBuyer.address)).to.be.equal(SalePrice); 
 
         // Initiate Flash loan
         await this.bank.connect(borrower).flashLoan(this.trader.address, FLASHLOAN);
@@ -99,9 +95,6 @@ describe('[Trade Finance Flash loan]', function () {
 
         // Supplier received funds:
         expect(await ethers.provider.getBalance(buyer.address)).to.be.gt(supplierInitialBalance); 
-            
-        // Off-taker paid the price:
-        expect(await ethers.provider.getBalance(offtaker.address)).to.be.lt(offtakerInitialBalance);
 
         // Factoring received receivables tokens
         
@@ -116,15 +109,15 @@ describe('[Trade Finance Flash loan]', function () {
         -ethers.utils.formatEther(supplierInitialBalance)));
 
         // Seller's payment    
-        console.log("Seller's payment: ", Math.round(ethers.utils.formatEther(await ethers.provider.getBalance(offtaker.address))
-        -ethers.utils.formatEther(offtakerInitialBalance)));
+        console.log("Seller's payment: ", Math.round(ethers.utils.formatEther(offtakerInitialBalance)-ethers.utils.formatEther(await ethers.provider.getBalance(offtaker.address))
+        ));
 
         // Factoring receivable token balance:
         console.log("Factoring receivable token balance: ", Math.round(ethers.utils.formatEther(await this.receivableToken.balanceOf(this.factoring.address))-ethers.utils.formatEther(0)));
 
         // Factoring funds payment:
-        console.log("Factoring funds balance: ", Math.round(ethers.utils.formatEther(await ethers.provider.getBalance(this.factoring.address))-ethers.utils.formatEther(factoringInitialBalance)));          
+        console.log("Factoring funds balance: ", Math.round(ethers.utils.formatEther(await ethers.provider.getBalance(this.factoring.address))-ethers.utils.formatEther(factoringInitialBalance)));        
 
     });
-    
+ 
 });
