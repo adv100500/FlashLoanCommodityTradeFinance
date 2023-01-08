@@ -86,8 +86,6 @@ contract FlashLoanBorrowerTraderReceivables {
         receivableToken.transfer(factoring, price);        
         IFactoring(factoring).SellReceivables(address(receivableToken));
 
-        // Check funds received
-        //require(address(this).balance>price, Strings.toString(address(this).balance));
     }
     function setToken(address _receivableToken) external {
         receivableToken=ReceivableToken(_receivableToken);
