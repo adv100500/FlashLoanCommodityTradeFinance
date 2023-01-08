@@ -6,7 +6,7 @@ import "./TFReceivableToken.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
- * @title FlashLoanBorrower
+ * @title FlashLoanBorrowerTraderReceivables
  */
 
 interface IOfftaker {
