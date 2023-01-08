@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 
 /**
  * @title ReceivableToken
- * Mintable ERC20 with 2 decimals to issue tokenized receivables 
+ * Mintable ERC20 to issue tokenized receivables 
  */
 contract ReceivableToken is ERC20, AccessControl {
 
