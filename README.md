@@ -55,3 +55,6 @@ In this example above we have seen how flash loans could facilitate spot transac
 10) Factoring provider automatically transfers the funds to trader's contract.
 11) Reception of the funds by the trader's contract will automatically trigger repayment of the flash loan plus interest.
 12) Finally, trader's contract transfers profits to trader's account.
+
+![Screenshot 2023-01-08 231949](https://user-images.githubusercontent.com/121932525/211221975-2d906ed5-dc78-4bdd-8810-3840a270d14d.png)
+
