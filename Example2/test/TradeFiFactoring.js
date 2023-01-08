@@ -33,8 +33,6 @@ describe('[Trade Finance Flash loan]', function () {
         this.factoring = await factoringFactory.deploy();
         this.trader = await FlashLoanBorrowerFactory.deploy(this.bank.address, this.token.address, this.endBuyer.address, this.supplier.address, borrower.address, this.factoring.address);
         this.receivableToken = await ReceivableTokenFactory.attach(await this.endBuyer.receivableToken());
-        //console.log(this.receivableToken.address);
-        
                 
         // Transfer funds to bank's contract         
         await bank.sendTransaction({ to: this.bank.address, value: MONEY_IN_POOL });
@@ -69,8 +67,6 @@ describe('[Trade Finance Flash loan]', function () {
         expect(
             await this.token.balanceOf(this.supplier.address)
         ).to.equal(INITIAL_GOODS_TOKEN_BALANCE);
-
-
 
     });
 
@@ -127,13 +123,8 @@ describe('[Trade Finance Flash loan]', function () {
         console.log("Factoring receivable token balance: ", Math.round(ethers.utils.formatEther(await this.receivableToken.balanceOf(this.factoring.address))-ethers.utils.formatEther(0)));
 
         // Factoring funds payment:
-        console.log("Factoring funds balance: ", Math.round(ethers.utils.formatEther(await ethers.provider.getBalance(this.factoring.address))-ethers.utils.formatEther(factoringInitialBalance)));        
-
-
-         
-   
+        console.log("Factoring funds balance: ", Math.round(ethers.utils.formatEther(await ethers.provider.getBalance(this.factoring.address))-ethers.utils.formatEther(factoringInitialBalance)));          
 
     });
-
     
 });
