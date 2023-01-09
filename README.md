@@ -2,7 +2,7 @@
 
 Please see two examples below how **flash loans** could facilitate commodity trade finance transactions for commodity trading companies.
 
-The proof of concept with the corresponding smart contracts is available as well as the testing script (please see "Example1" and "Example2" contracts folders for smart contracts and test folders for testing scripts).
+The proof of concept with the corresponding smart contracts is available as well as the testing scripts (please see "Example1" and "Example2" contracts folders for smart contracts and test folders for testing scripts).
 
 **Advantage of flash loans for commodity trading companies:**
 
