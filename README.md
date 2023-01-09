@@ -52,7 +52,7 @@ In this example above we have seen how flash loans could facilitate spot transac
 7) Final off-taker's contract transfers the tokens to the final off-taker's account automatically upon reception of the tokens.
 8) Final off-taker's contract mints tokenized receivables to trader's contract automatically upon reception of tokenized goods (assuming 120 tokens for tokenized receivables).
 9) Trader transfers tokenized receivables to the factoring provider automatically upon reception of tokenized receivables.
-10) Factoring provider automatically transfers the funds to trader's contract and keeps factoring fee (assuming 3 ethers).
+10) Factoring provider automatically transfers the funds to trader's contract and charges factoring fee (assuming 3 ethers).
 11) Reception of the funds by the trader's contract will automatically trigger repayment of the flash loan plus interest.
 12) Finally, trader's contract transfers profits to trader's account.
 
