@@ -8,6 +8,11 @@ The proof of concept with the corresponding smart contracts is available as well
 
 As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (as the interest is charged for the period of a few seconds) compared to traditional financing for the duration of the transaction and no collateral is required.
 
+**Advantage of using blockchain for factoring:**
+
+Invoice financing is a big area of fraud where fraudsters present the same (or not valid) invoice to multiple banks for processing. Such financing frauds are still addressed as passive events where a post-mortem identifies red flags that were missed - therefore the loss is not prevented. 
+With blockchain technology, the transactions are easy to track and it is highly difficult for anyone to misuse the technology for fraudulent purposes.
+
 **Definitions**
 
 **Flash loan:** flash loan is a type of loan that is only available during the duration of the transaction. The funds are borrowed at the beginning of the transaction and must be repaid at the end and **no collateral is required**. In case the funds are not repaid, the whole transaction is deemed null and void and reverted to its initial state and this is why there is no credit risk of the borrower involved. This is possible due to **atomicity** of blockchain transactions. 
