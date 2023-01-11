@@ -8,7 +8,7 @@ The proof of concept with the corresponding smart contracts is available as well
 
 As the whole transaction takes place in a few seconds, the advantage for the trading company is a much lower interest expense (as the interest is charged for the period of a few seconds) compared to traditional financing for the duration of the transaction and no collateral is required.
 
-**Advantage of blockchain in factoring:**
+**Advantage of invoice factoring through blockchain:**
 
 Invoice financing is a big area of fraud where fraudsters present the same (or not valid) invoice to multiple banks for processing. Such financing frauds are still addressed as passive events where a post-mortem identifies red flags that were missed - therefore the loss is not prevented. 
 With blockchain technology, the transactions are easy to track and it is highly difficult for anyone to misuse the technology for fraudulent purposes.
@@ -55,8 +55,8 @@ In this example above we have seen how flash loans could facilitate spot transac
 5) Upon reception of the funds, supplier's contract transfers the tokens to trader's contract.
 6) The reception of tokens by the trader's contract automatically triggers transfer of the received tokens to the final off-taker's contract.
 7) Final off-taker's contract transfers the tokens to the final off-taker's account automatically upon reception of the tokens.
-8) Final off-taker's contract mints tokenized receivables to trader's contract automatically upon reception of tokenized goods (assuming 120 tokens for tokenized receivables).
-9) Trader transfers tokenized receivables to the factoring provider automatically upon reception of tokenized receivables.
+8) Final off-taker's contract mints tokenized invoices to trader's contract automatically upon reception of tokenized goods (assuming 120 tokens for tokenized invoices).
+9) Trader transfers tokenized invoices to the factoring provider automatically upon reception of tokenized invoices.
 10) Factoring provider automatically transfers the funds to trader's contract and charges factoring fee (assuming 3 ethers).
 11) Reception of the funds by the trader's contract will automatically trigger repayment of the flash loan plus interest.
 12) Finally, trader's contract transfers profits to trader's account.
